@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* 기본 스타일 초기화 or reset css 활용 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:link {
+	color: black;
+	text-decoration: none;
+}
+
+/* ================= header ================== */
+
+#header {
+	background-color: rgba(32, 14, 37, 0.7); /* #200e25와 같은 색상 */
+	display: flow-root;
+	padding: 20px 0; /* 상하 20px, 좌우0 */
+}
+.header_wrap {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between
+}
+.nav {
+	display: flex;
+	column-gap: 1.25rem
+}
+.nav a, .member a {
+	color: #d6d6d6;
+	text-transform: uppercase
+}
+.nav a {
+	vertical-align: middle; /* 수직-정렬: 세로 중앙 */
+	background-color: beige
+}
+
+.catalogue {
+	display: inline-block;
+	width: 120px;
+	background-image: url('../images/topicon.png');
+	background-position: 0 0;
+	background-repeat : no-repeat;	
+	background-size: 30px;
+	padding-left: 30px;
+}
+
+.member {
+	display: flex;
+	column-gap: 1rem	
+}
+
+/* ======================== ad ======================= */
+.ad-bg {
+	height: 835px;
+	background-image: url('../images/visual_slogan.png'), url('../images/visual_bg.jpg');
+	background-position: center center;
+	background-repeat : no-repeat;	
+	background-size: cover; /* 또는 contain */
+	padding-left: 30px;
+} 
